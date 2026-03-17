@@ -76,7 +76,7 @@ color:#ff4d6d;
   width: 250px; /* ajustá el tamaño que quieras */
   border: 4px solid #ff4d6d; /* borde rosa */
   border-radius: 15px;
-  object-fit: cover;
+  object-fit: fill;
   box-shadow: 0 4px 15px rgba(255, 77, 109, 0.4);
 }
 button{
@@ -162,10 +162,8 @@ opacity:0;
 html, body {
   margin: 0;
   padding: 0;
-  height: 100%;
 }
   body {
-    min-height: 100%;
     height: auto;
     overflow: auto;
   }
