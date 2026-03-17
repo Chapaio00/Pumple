@@ -62,7 +62,6 @@ overflow-y:auto;
     box-shadow:0 10px 25px rgba(0,0,0,0.2);
     max-width: 800px;
     z-index: 2;
-    margin:0;
     text-align: center;
 }
 h1{
@@ -173,15 +172,29 @@ html, body {
   padding: 0;
   height: 100%;
   
+
 }
+
+.main-wrapper {
+    flex-direction: column; /* apilar verticalmente */
+    align-items: center;
+  }
+  .aside {
+    flex-direction: row;
+    flex-wrap:wrap;
+    justify-content: center;
+  }
   body {
     
     height: auto;
     overflow: auto;
   }
+ 
   .container {
-  margin: 10px;
-  padding: 20px;
+    width: 95%;
+    padding: 20px;
+    margin: 10px 0;
+  }
 }
 .foto img {
   width: 100%;
@@ -195,9 +208,13 @@ button {
     flex-direction: column;
     align-items: center;
   }
-
+  .btnMovimiento {
+    width: 80%;
+    max-width: 250px;
+    margin: 10px 0;
+  }
   .aside img {
-    width: 70%;
+    width: 45%;
     transform: translateX(0);
   }
 
