@@ -1,0 +1,151 @@
+
+
+body{
+margin:0;
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+background: linear-gradient(135deg,#ff9a9e,#fad0c4);
+font-family: Arial;
+text-align:center;
+overflow:hidden;
+}
+
+
+/* Contenedor de fotos */
+.aside {
+  display: flex;
+  flex-direction: column; /* fotos una debajo de otra */
+  gap: 20px; /* espacio entre fotos */
+  /* solo control del layout aquí */
+}
+.aside button{
+
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+
+/* Estilo de cada foto individual */
+
+.aside img {
+  width: 300px;             /* ancho de la foto */
+  border: 3px solid #ff4d6d; /* borde rosa */
+  border-radius: 12px;
+  object-fit: cover;
+  box-shadow: 0 4px 10px rgba(255,77,109,0.4);
+  /* Animación desde la derecha */
+  transform: translateX(400px); /* empieza fuera de la vista */
+  opacity: 0;
+  transition: transform 0.5s ease, opacity 0.5s ease;
+}
+/* Cuando se activa la animación */
+.aside.show img {
+  transform: translateX(0);
+  opacity: 1;
+}
+.container{
+    background: white;
+    padding:40px;
+    border-radius:20px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.2);
+    max-width: 800px;
+    z-index: 2;
+    position: relative;
+    margin:0 auto;
+    text-align: center;
+}
+h1{
+color:#ff4d6d;
+}
+
+.contenido {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+.foto img {
+  width: 250px; /* ajustá el tamaño que quieras */
+  border: 4px solid #ff4d6d; /* borde rosa */
+  border-radius: 15px;
+  object-fit: cover;
+  box-shadow: 0 4px 15px rgba(255, 77, 109, 0.4);
+}
+button{
+margin-top:20px;
+padding:12px 25px;
+border:none;
+border-radius:25px;
+background:#ff4d6d;
+color:white;
+font-size:16px;
+cursor:pointer;
+transition:0.3s;
+}
+button:hover{
+background:#ff1e4d;
+}
+#mensaje{
+margin-top:20px;
+font-size:18px;
+color:#444;
+}
+
+.mensajeOculto {
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: max-height 0.5s ease, opacity 0.5s ease;
+}
+
+.mensajeVisible {
+      max-height: 400px;
+      opacity: 1;
+      margin-top: 20px;
+    }
+.corazones{
+position:fixed;
+top:0;
+left:0;
+width:100vw;
+height:100vh;
+pointer-events:none;
+z-index: 1;
+}
+
+.corazones span{
+position:absolute;
+bottom:-50px;
+font-size:35px;
+animation:subir 6s linear infinite;
+}
+
+/* posiciones distintas */
+
+.corazones span:nth-child(1){ left:5%; animation-delay:0s;}
+.corazones span:nth-child(2){ left:15%; animation-delay:1s;}
+.corazones span:nth-child(3){ left:30%; animation-delay:3s;}
+.corazones span:nth-child(4){ left:45%; animation-delay:1s;}
+.corazones span:nth-child(5){ left:60%; animation-delay:3s;}
+.corazones span:nth-child(6){ left:75%; animation-delay:4s;}
+.corazones span:nth-child(7){ left:85%; animation-delay:2s;}
+.corazones span:nth-child(8){ left:95%; animation-delay:3s;}
+
+@keyframes subir{
+
+0%{
+transform:translateY(0);
+opacity:0;
+}
+
+20%{
+opacity:1;
+}
+
+100%{
+transform:translateY(-110vh);
+opacity:0;
+}
+
+}
