@@ -2,16 +2,24 @@
 
 body{
 margin:0;
+padding: 0;
 min-height:100vh;
-height: auto;
-display:flex;
-justify-content:center;
-align-items:center;
+
+justify-content: center;
+
 background: linear-gradient(#ff9a9e,#fad0c4);
 font-family: Arial;
 text-align:center;
 overflow-x: hidden;
 overflow-y:auto;
+}
+
+.main-wrapper {
+  display: flex;
+  align-items: center; /* centra verticalmente */
+  justify-content: center; /* centra horizontalmente */
+  gap: 20px; /* espacio entre los elementos laterales y el central */
+  padding: 20px;
 }
 
 
@@ -54,7 +62,7 @@ overflow-y:auto;
     box-shadow:0 10px 25px rgba(0,0,0,0.2);
     max-width: 800px;
     z-index: 2;
-    margin:0 auto;
+    margin:0;
     text-align: center;
 }
 h1{
