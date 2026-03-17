@@ -84,7 +84,6 @@ color:#ff4d6d;
   width: auto; /* ajustá el tamaño que quieras */
   height: auto;
   max-width: 350px;
-  max-height: 350px;
   border: 6px solid #ff4d6d; /* borde rosa */
   border-radius: 15px;
   object-fit: contain;
