@@ -81,10 +81,13 @@ color:#ff4d6d;
   gap: 20px;
 }
 .foto img {
-  width: 250px; /* ajustá el tamaño que quieras */
+  width: auto; /* ajustá el tamaño que quieras */
+  height: auto;
+  max-width: 350px;
+  max-height: 350px;
   border: 6px solid #ff4d6d; /* borde rosa */
   border-radius: 15px;
-  object-fit: fill;
+  object-fit: contain;
   box-shadow: 0 4px 15px rgba(255, 77, 109, 0.4);
 }
 button{
@@ -115,7 +118,7 @@ color:#444;
 }
 
 .mensajeVisible {
-      max-height: 400px;
+      max-height: none;
       opacity: 1;
       margin-top: 20px;
     }
@@ -171,8 +174,6 @@ html, body {
   margin: 0;
   padding: 0;
   height: 100%;
-  
-
 }
 
 .main-wrapper {
@@ -197,7 +198,9 @@ html, body {
   }
 }
 .foto img {
-  width: 100%;
+  width: 90%;
+  max-width:none;
+  margin: 10px 0;
 }
 button {
   width: 80%;
@@ -218,4 +221,3 @@ button {
     transform: translateX(0);
   }
 
-}
