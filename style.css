@@ -7,10 +7,11 @@ height: auto;
 display:flex;
 justify-content:center;
 align-items:center;
-background: linear-gradient(135deg,#ff9a9e,#fad0c4);
+background: linear-gradient(#ff9a9e,#fad0c4);
 font-family: Arial;
 text-align:center;
-overflow:hidden;
+overflow-x: hidden;
+overflow-y:auto;
 }
 
 
@@ -162,8 +163,11 @@ opacity:0;
 html, body {
   margin: 0;
   padding: 0;
+  height: 100%;
+  
 }
   body {
+    
     height: auto;
     overflow: auto;
   }
