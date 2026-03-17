@@ -48,6 +48,7 @@ overflow:hidden;
 .container{
     background: white;
     padding:40px;
+    padding-bottom: 40px;
     border-radius:20px;
     box-shadow:0 10px 25px rgba(0,0,0,0.2);
     max-width: 800px;
@@ -158,6 +159,10 @@ opacity:0;
 
 @media (max-width: 768px) {
 
+html, body {
+  margin: 0;
+  padding: 0;
+}
   body {
     height: auto;
     overflow: auto;
