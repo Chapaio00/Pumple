@@ -8,8 +8,8 @@
 </head>
 <body>
      <div class="main-wrapper">
-    <button class="btnMovimiento" id="btnAtras">⬅</button>
-
+    <button class="btnMovimiento" id="btnAtras" onclick="retrocederPagina()">⬅</button>
+    <div id="pag1" class="pagina paginaVisible">
         <div class="container">
             <div class="contenido">
 
@@ -29,23 +29,30 @@
 
         </div>
         </div>
-        
+
     </div>
-                    <div class="aside">
+        <div class="aside">
                  <button id="btnMostrarImg"></button>
                  <img src="img/cinnamonCumpleaños2.jpg" alt="cinnamonTorta"/>
                  <img src="img/gifCinnamonCumpleaños.gif" alt="cinnamonVela"/>
                  <img src="img/gudetamaCumpleaños.jpg" alt="gudetamaCumpleaños"/>
                              </div>
+     </div>
+     <div id="pag2" class="pagina paginaInvisible">
+        <h1>TESTING</h1>
+     </div>
+
     <div class="corazones">
   <span>❤️</span>
   <span>❤️</span>
   <span>❤️</span>
   <span>❤️</span>
   <span>❤️</span>
-  
+  <span>❤️</span>
+  <span>❤️</span>
+  <span>❤️</span>
 </div>
-<button class="btnMovimiento" id="btnAdelante">➡</button>
+<button class="btnMovimiento" id="btnAdelante" onclick="avanzarPagina()" >➡</button>
 </div>
 <script src="script.js"></script>
 </body>
