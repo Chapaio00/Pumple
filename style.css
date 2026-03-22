@@ -118,7 +118,15 @@ margin-top:20px;
 font-size:18px;
 color:#444;
 }
-
+.texto {
+  font-size: 18px;
+}
+#mensajeJuntos{
+  border-radius: 300px;
+  font-size: 25px;
+  color: pink;
+  
+}
 .mensajeOculto {
   max-height: 0;
   overflow: hidden;
@@ -187,6 +195,34 @@ opacity:0;
 
 }
 
+/*Pag 2*/
+
+
+.contenidoPag2{
+  display: flex;
+  flex-direction: column;
+}
+.fotosPag2{
+display: flex;
+flex-direction: row;
+flex-wrap:nowrap;
+}
+
+.fotosPag2 img{
+  width: auto; /* ajustá el tamaño que quieras */
+  height: auto;
+  max-width: 250px;
+  border: 3px solid #ff4d6d; /* borde rosa */
+  border-radius: 15px;
+  object-fit: contain;
+  box-shadow: 0 4px 15px rgba(255, 77, 109, 0.4);
+
+}
+
+
+
+
+/* Modificaciones para telefonos!*/
 @media (max-width: 768px) {
 
 html, body {
@@ -238,6 +274,20 @@ button {
   .aside img {
     width: 45%;
     transform: translateX(0);
+  }
+
+
+  .fotosPag2{
+
+    width: auto;
+  }
+  .fotosPag2 img{
+    max-width: 50%;
+  
+  }
+
+  .paginaVisible{
+    width: 95%;
   }
 
 }
