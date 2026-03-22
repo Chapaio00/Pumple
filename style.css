@@ -23,26 +23,16 @@ overflow-y:auto;
   padding: 20px;
 }
 
-/*.main-wrapper {
-    flex-direction: column; /* apilar verticalmente */
-   /* align-items: center;
-  }*/
-
-/* Contenedor de fotos */
-/*.aside {
-  display: flex;
-  flex-direction: column; /* fotos una debajo de otra */
-  /*gap: 20px; /* espacio entre fotos */
-  /* solo control del layout aquí */
 
 .aside {
-  display:flex;
+  display: flex;
     flex-direction: row;
     flex-wrap:wrap;
-    justify-content: center;
-    
-    gap: 20px;
+    justify-content: space-around;
+    align-content: center;
+    align-items: stretch;
   }
+  
 
 
 .aside button{

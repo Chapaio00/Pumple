@@ -1,3 +1,6 @@
+
+//Pag 1
+
 const btn = document.getElementById('btnMostrar');
 const mensaje = document.getElementById('mensaje');
 
@@ -10,6 +13,8 @@ const aside = document.querySelector('.aside');
 btnImg.addEventListener('click', () => {
   aside.classList.toggle('show')
 })
+
+// cambiar Pagina
 
 let  paginas = document.querySelectorAll(".pagina")
 let  paginasArray = Array.from(paginas) ;
