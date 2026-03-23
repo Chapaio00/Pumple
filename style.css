@@ -228,7 +228,10 @@ flex-wrap:nowrap;
   width: 95%;
 
 }
-
+/*Pag 4*/
+.contenidoPag4 p{
+  font-size: 25px;
+}
 
 /* Modificaciones para telefonos!*/
 @media (max-width: 768px) {
