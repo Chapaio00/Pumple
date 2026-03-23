@@ -219,7 +219,15 @@ flex-wrap:nowrap;
 
 }
 
+/*Pag 3*/
+.contenidoPag2{
+  display: flex;
+  flex-direction: column;
+}
+.contenidoPag3 video{
+  width: 95%;
 
+}
 
 
 /* Modificaciones para telefonos!*/
